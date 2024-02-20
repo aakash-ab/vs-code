@@ -1,20 +1,20 @@
-# candidate_id
-# candidate_name
+candidate_id
+candidate_name
 
-# technology_id
-# category_id
+technology_id
+category_id
 
-# class NameSerializer(serializers.ModelSerilizer):
-#     technology = TechnologySerializer(many=True)
-#     category = categorySerializer(many=True)
+class NameSerializer(serializers.ModelSerilizer):
+    technology = TechnologySerializer(many=True)
+    category = categorySerializer(many=True)
 
-#     def create(self, validated_data):
-#         technology = validated_data.pop('technology')
-#         category = validated_data.pop('category')
-#         naming = Name.objects.create(**validated_data)
-#         for techno in technology:
-#             Technology.objects.create(name=name_instance, **techno)
-#             return name_instance
+    def create(self, validated_data):
+        technology = validated_data.pop('technology')
+        category = validated_data.pop('category')
+        naming = Name.objects.create(**validated_data)
+        for techno in technology:
+            Technology.objects.create(name=name_instance, **techno)
+            return name_instance
 
 
 num1 = (1,2,3,4)
