@@ -1,5 +1,6 @@
-candidate_id
-candidate_name
+'''No need'''
+# candidate_id
+# candidate_name
 
 '''Added comments'''
 # technology_id
