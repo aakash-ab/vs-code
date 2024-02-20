@@ -1,8 +1,9 @@
 candidate_id
 candidate_name
 
-technology_id
-category_id
+'''Added comments'''
+# technology_id
+# category_id
 
 class NameSerializer(serializers.ModelSerilizer):
     technology = TechnologySerializer(many=True)
